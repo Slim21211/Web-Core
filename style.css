@@ -15,7 +15,7 @@ body {
   width: 100vw;
 }
 
-.h-wrapper-left {
+.header-wrapper-left {
   margin: 0;
   padding: 0;
   display: flex;
@@ -23,11 +23,11 @@ body {
   align-items: center;
 }
 
-.h-wrapper-left > div:not(div:last-child) {
+.header-wrapper-left > div:not(div:last-child) {
   margin-right: 16px;
 }
 
-.h-wrapper-right {
+.header-wrapper-right {
   margin: 0;
   padding: 0;
   display: flex;
@@ -35,11 +35,9 @@ body {
   align-items: center;
 }
 
-.h-wrapper-right > div:not(div:last-of-type) {
+.header-wrapper-right > div:not(div:last-of-type) {
   margin-right: 16px;
 }
-
-
 
 .logo {
   padding: 0;
@@ -53,12 +51,53 @@ body {
   margin: 0;
   width: 40px;
   height: 40px;
+  background-image: url(icons/burger.png);
 }
 
 .left-vertical-line, .right-vertical-line {
   width: 2px;
   height: 32px;
   background: #EAEAEA;
+}
+
+.call {
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(icons/call.png);
+}
+
+.profile {
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(icons/profile.png);
+}
+
+.chat {
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(icons/chat.png);
+}
+
+.repair-icon {
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(icons/repair.png);
+}
+
+.checkstatus-icon {
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(icons/checkstatus.png);
 }
 
 .main {
@@ -93,6 +132,10 @@ body {
   overflow: scroll;
 }
 
+.menu::-webkit-scrollbar {
+  width: 0;
+}
+
 .list {
   margin: 0;
   padding: 0;
@@ -113,7 +156,7 @@ body {
   font-size: 16px;
 }
 
-.list__item-switched {
+.list__item_item-switched {
   border: 2px solid #B8FFEC;
   border-radius: 6px;
   background-color: #FFFFFF;
@@ -152,14 +195,14 @@ body {
   line-height: 24px;
 }
 
-.c-wrapper {
+.text-wrapper {
   margin: 0;
   padding: 0;
   margin-top: 16px;
   margin-bottom: 20px;
 }
 
-.b-wrapper__item {
+.body-wrapper__item {
   padding: 16px;
 }
 
@@ -236,12 +279,17 @@ body {
   .text {
     line-height: 20px;
   }
-  .c-wrapper {
+  .text-wrapper {
     margin: 0;
   }
 }
 
 @media (min-width: 1120px) {
+  body {
+    width: 1120px;
+    margin: 0 auto;
+  }
+
   .icon-description {
     display: block;
   }
@@ -294,7 +342,7 @@ body {
   .section-wrapper {
     align-items: flex-start;
   }
-  .b-wrapper__item {
+  .body-wrapper__item {
     padding-top: 0;
   }
   .menu {
