@@ -102,6 +102,7 @@ body {
 
 .main {
   background-color: #F8F8F8;
+  margin-top: 24px;
 }
 
 .title {
@@ -175,24 +176,26 @@ body {
 .continue {
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+  font-family: TT Lakes-Medium;
+  font-weight: 500;
+  font-size: 14px;
+  background-color:#F8F8F8;
+  border: none;
 }
 
-.continue__image {
+.continue::before {
+  display: block;
+  content: "";
   margin: 0;
   padding: 0;
   margin-right: 8px;
   width: 24px;
   height: 24px;
-}
-
-.continue__text{
-  margin: 0;
-  padding: 0;
-  width: 120px;
-  font-family: TT Lakes-Medium;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  background-image: url(icons/expand.png);
 }
 
 .text-wrapper {
@@ -203,7 +206,14 @@ body {
 }
 
 .body-wrapper__item {
-  padding: 16px;
+  margin-top: 0;
+  padding: 0 16px;
+  padding-bottom: 0;
+}
+
+.section-wrapper {
+  margin: 0;
+  padding: 0;
 }
 
 .cps-image {
@@ -293,14 +303,15 @@ body {
   .icon-description {
     display: block;
   }
+
   .header-block-wrapper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     background-color: #F8F8F8;
-    ;
   }
+
   .call {
     display: none;
   }
