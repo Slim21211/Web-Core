@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <title>CPS menu</title>
 </head>
-<body>
-    <div class="mobile-menu">
-        <header class="mobile-menu-header">
-            <div class="mobile-menu-header-left">
-                <button class=menu-close>
-                </button>
-                <div class="logo">
-                <img src="logo/Grouplogo.png" alt="Логотип">
-                </div>
+<body class="mobile-menu">
+    <header class="mobile-menu-header">
+        <div class="mobile-menu-header-left">
+            <button class=menu-close>
+            </button>
+            <div class="logo">
+            <img src="logo/Grouplogo.png" alt="Логотип">
             </div>
-            <div class="mobile-menu-header-right">
-                <button class="search">
-                </button> 
-            </div>
-          </header>
-          <ul class="mobile-menu-list">
+        </div>
+        <div class="mobile-menu-header-right">
+            <button class="search">
+            </button> 
+        </div>
+    </header>
+    <nav class="mobile-menu-navigation">
+        <ul class="mobile-menu-list">
             <li class="mobile-menu-list__item mobile-menu-list__item_active">Ремонт техники</li>
             <li class="mobile-menu-list__item">Услуги и сервисы</li>
             <li class="mobile-menu-list__item">Корпоративным клиентам</li>
@@ -32,27 +32,25 @@
             <li class="mobile-menu-list__item">Наши сервисные центры</li>
             <li class="mobile-menu-list__item">Контакты</li>
         </ul>
-        <footer class="mobile-menu-footer">
-            <ul class="mobile-menu-footer-icons">
-                <li class="mobile-menu-footer-icons__item">
-                    <button class="call"></button></li>
-                <li class="mobile-menu-footer-icons__item">
-                    <button class="chat"></button></li>
-                <li class="mobile-menu-footer-icons__item">
-                    <button class="profile"></button></li>
-            </ul>
-            <div class="mobile-menu-email">
-                <a class="email" href="mailto: mail@cps.com">mail@cps.com</a>
-            </div>
-            <div class="mobile-menu-tel">
-                <a class="tel" href="tel: +78008908900">8 800 890 8900</a>
-            </div>
-            <ul class="mobile-menu-language">
-                <li class="mobile-menu-language__item"><button class="lang-btn lang-btn_active">RU</button></li><li  class="mobile-menu-language__item"><button class="lang-btn">EN</button></li><li  class="mobile-menu-language__item"><button class="lang-btn">CH</button></li>
-            </ul>
-        </footer>
-    </div>
-    
-    
+    </nav>
+    <footer class="mobile-menu-footer">
+        <ul class="mobile-menu-footer-icons">
+            <li class="mobile-menu-footer-icons__item">
+                <button class="call"></button></li>
+            <li class="mobile-menu-footer-icons__item">
+                <button class="chat"></button></li>
+            <li class="mobile-menu-footer-icons__item">
+                <button class="profile"></button></li>
+        </ul>
+        <div class="mobile-menu-contacts-wrapper">
+            <a class="email" href="mailto: mail@cps.com">mail@cps.com</a>
+            <a class="tel" href="tel: +78008908900">8 800 890 8900</a>
+        </div>
+        <ul class="mobile-menu-language">
+            <li class="mobile-menu-language__item"><button class="lang-btn lang-btn_active">RU</button></li>
+            <li  class="mobile-menu-language__item"><button class="lang-btn">EN</button></li>
+            <li  class="mobile-menu-language__item"><button class="lang-btn">CH</button></li>
+        </ul> 
+    </footer>
 </body>
 </html>
