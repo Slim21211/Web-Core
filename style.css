@@ -54,6 +54,13 @@ body {
   background-image: url(icons/burger.png);
 }
 
+.menu-icon:hover {
+  transition-property: transform;
+    transition-duration: .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .left-vertical-line, .right-vertical-line {
   width: 2px;
   height: 32px;
@@ -69,6 +76,13 @@ body {
   border: none;
 }
 
+.call:hover {
+  transition-property: transform;
+    transition-duration: .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .profile {
   padding: 0;
   margin: 0;
@@ -76,6 +90,13 @@ body {
   height: 40px;
   background: #FFFFFF url(icons/profile.png);
   border: none;
+}
+
+.profile:hover {
+  transition-property: transform;
+  transition-duration: .5s;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .chat {
@@ -87,6 +108,13 @@ body {
   border: none;
 }
 
+.chat:hover {
+  transition-property: transform;
+  transition-duration: .5s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .repair-icon {
   padding: 0;
   margin: 0;
@@ -95,12 +123,30 @@ body {
   background-image: url(icons/repair.png);
 }
 
+.repair-icon:hover {
+  transition-property: transform;
+  transition-duration: .5s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.icon-description:hover {
+  cursor: pointer;
+}
+
 .checkstatus-icon {
   padding: 0;
   margin: 0;
   width: 40px;
   height: 40px;
   background-image: url(icons/checkstatus.png);
+}
+
+.checkstatus-icon:hover {
+  transition-property: transform;
+  transition-duration: .5s;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .main {
@@ -160,6 +206,10 @@ body {
   font-size: 16px;
 }
 
+.list__item:not(.list__item_item-switched):hover {
+  cursor: pointer;
+}
+
 .list__item_item-switched {
   border: 2px solid #B8FFEC;
   border-radius: 6px;
@@ -201,6 +251,10 @@ body {
   background-image: url(icons/expand.png);
 }
 
+.continue:hover {
+  cursor: pointer;
+}
+
 .text-wrapper {
   margin: 0;
   padding: 0;
@@ -230,229 +284,6 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 16px;
-}
-
-.mobile-menu {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 320px;
-  background: #FFFFFF;
-  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-}
-
-.menu-close {
-  padding: 0;
-  margin: 0;
-  width: 40px;
-  height: 40px;
-  background: #FFFFFF url(icons/burgerclose.png);
-  border: none;
-}
-
-.menu-close:hover {
-  transition-property: transform;
-  transition-duration: .5s;
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.search {
-  padding: 0;
-  margin: 0;
-  width: 40px;
-  height: 40px;
-  background: #FFFFFF url(icons/search.png);
-  border: none;
-}
-
-.search:hover {
-  transition-property: transform;
-  transition-duration: .5s;
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.mobile-menu-header .logo {
-  display: block;
-}
-
-.mobile-menu-header-left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 158px;
-}
-
-.mobile-menu-header-right {
-  display: flex;
-  justify-content: end;
-}
-
-.mobile-menu-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18.59px 14px;
-  width: 320px;
-}
-
-.mobile-menu-navigation {
-  padding: 24px;
-  margin-top: 46px;
-}
-
-.mobile-menu-list {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 416px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-family: TT Lakes-Medium;
-}
-
-.mobile-menu-list__item {
-  margin: 0;
-  padding: 0;
-  height: 24px;
-  font-weight: 500;
-  letter-spacing: -0.2px;
-  font-size: 16px;
-}
-
-.mobile-menu-list__item:not(.mobile-menu-list__item_active):hover {
-  cursor: pointer;
-}
-
-.mobile-menu-list__item_active {
-  display: flex;
-  align-items: center;
-  color: #7E7E82;
-}
-
-.mobile-menu-list__item_active::before {
-  content: "";
-  margin: 0 20px 0 -24px;
-  display: block;
-  width: 4px;
-  height: 32px;
-  background: #41F6D7;
-  border-radius: 0 50px 50px 0;
-}
-
-.mobile-menu-footer {
-  padding-left: 24px;
-  padding-bottom: 32px;
-  margin-top: 268px;
-}
-
-.mobile-menu-footer-icons {
-  display: flex;
-  justify-content: space-between;
-  width: 152px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.mobile-menu-footer-icons__item {
-  margin: 0;
-  padding: 0;
-}
-
-.mobile-menu-footer-icons .call {
-  display: block;
-}
-
-.mobile-menu-footer-icons .call:hover {
-  transition-property: transform;
-  transition-duration: .5s;
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.mobile-menu-footer-icons .chat {
-  display: block;
-}
-
-.mobile-menu-footer-icons .chat:hover {
-  transition-property: transform;
-  transition-duration: .5s;
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.mobile-menu-footer-icons .profile {
-  display: block;
-}
-
-.mobile-menu-footer-icons .profile:hover {
-  transition-property: transform;
-  transition-duration: .5s;
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.mobile-menu-contacts-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 68px;
-  margin-top: 16px;
-  margin-bottom: 40px;
-}
-
-.email {
-  font-family: "TT Lakes-Medium";
-  font-weight: 500;
-  color: #1B1C21;
-  text-decoration: none;
-  font-size: 16px;
-  letter-spacing: -0.2px;
-}
-
-.tel {
-  font-family: "TT Lakes-Bold";
-  font-weight: 700;
-  color: #1B1C21;
-  text-decoration: none;
-  font-size: 24px;
-  letter-spacing: -0.6px;
-}
-
-.mobile-menu-language {
-  display: flex;
-  justify-content: space-between;
-  width: 86px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.mobile-menu-language__item {
-  border: none;
-}
-
-.lang-btn {
-  border: none;
-  font-family: "TT Lakes-Medium";
-  font-weight: 500;
-  font-size: 16px;
-  background: #FFFFFF;
-  color: #1B1C21;
-}
-
-.lang-btn:not(.lang-btn_active):hover {
-  transition-property: transform;
-  transition-duration: .5s;
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.lang-btn_active {
-  color: #7E7E82;
 }
 
 @media (min-width: 320px) {
@@ -524,6 +355,7 @@ body {
   body {
     width: 1120px;
     margin: 0 auto;
+    background-color: #F8F8F8;
   }
 
   .mobile-menu {
