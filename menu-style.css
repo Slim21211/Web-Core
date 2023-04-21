@@ -16,7 +16,7 @@
     margin: 0;
     width: 40px;
     height: 40px;
-    background: #FFFFFF url(icons/burgerclose.png);
+    background: #FFFFFF url(../img/icons/burgerclose.png);
     border: none;
   }
   
@@ -32,7 +32,7 @@
     margin: 0;
     width: 40px;
     height: 40px;
-    background: #FFFFFF url(icons/search.png);
+    background: #FFFFFF url(../img/icons/search.png);
     border: none;
   }
   
@@ -139,7 +139,7 @@
     margin: 0;
     width: 40px;
     height: 40px;
-    background: #FFFFFF url(icons/call.png);
+    background: #FFFFFF url(../img/icons/call.png);
     border: none;
   }
   
@@ -155,7 +155,7 @@
     margin: 0;
     width: 40px;
     height: 40px;
-    background: #FFFFFF url(icons/chat.png);
+    background: #FFFFFF url(../img/icons/chat.png);
     border: none;
   }
   
@@ -171,7 +171,7 @@
     margin: 0;
     width: 40px;
     height: 40px;
-    background: #FFFFFF url(icons/profile.png);
+    background: #FFFFFF url(../img/icons/profile.png);
     border: none;
   }
   
