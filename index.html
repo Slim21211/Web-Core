@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>CPS</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link href="../styles/repair-style.css" rel="stylesheet" type="text/css" />
+  <link href="../styles/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -15,7 +17,7 @@
         </div>
         <div class="left-vertical-line"></div> 
         <div class="logo">
-          <img src="logo/Grouplogo.png" alt="Логотип">
+          <img src="../img/logo/Grouplogo.png" alt="Логотип">
         </div>
       </div>
       <div class="header-wrapper-right">
@@ -64,8 +66,34 @@
     </div>
     
   </main>
-  <script src="script.js"></script>
 
+  <div class="repair-container">
+    <header class="repair-container__item repair-header">
+        Ремонт техники различных брендов
+    </header>
+    <main class="repair-container__item repair-main swiper">
+        <div class="repair-main__item label-wrapper swiper-wrapper">
+            <button class="label-wrapper__item swiper-slide"></button>
+            <button class="label-wrapper__item swiper-slide"></button>
+            <button class="label-wrapper__item swiper-slide"></button>
+            <button class="label-wrapper__item swiper-slide"></button>
+            <button class="label-wrapper__item swiper-slide"></button>
+            <button class="label-wrapper__item swiper-slide"></button>
+            <button class="label-wrapper__item swiper-slide"></button>
+            <button class="label-wrapper__item swiper-slide"></button>
+            <button class="label-wrapper__item swiper-slide"></button>
+            <button class="label-wrapper__item swiper-slide"></button>
+            <button class="label-wrapper__item swiper-slide"></button>
+            
+        </div>
+        <div class="repair-main__item buttons-wrapper">
+            <button class="buttons-wrapper__item expand">Показать все</button>
+        </div>
+        <div class="swiper-pagination"></div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="../js/repair-script.js"></script>
 </body>
 
 </html>

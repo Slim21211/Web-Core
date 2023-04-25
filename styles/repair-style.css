@@ -7,7 +7,6 @@
 .repair-container__item:nth-child(1) {
     padding: 16px;
     background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
-
 }
 
 .repair-header {
@@ -30,6 +29,16 @@
     margin: 0;
     padding: 0;
     height: 122px;
+}
+
+.repair-main::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 24px;
+    height: 81px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
 .swiper-slide {
@@ -143,6 +152,10 @@
         height: 266px;
     }
 
+    .repair-main::after {
+        display: none;
+    }
+
     .swiper-slide {
         width: 224px !important;
     }
@@ -251,13 +264,16 @@
         margin: 0 auto;
     }
 
+    .repair-main::after {
+        display: none;
+    }
+
     .label-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 240px);
         grid-template-rows: repeat(2, 72px);
         column-gap: 32px;
         row-gap: 16px;
-
     }
 
     .label-wrapper__item::after {
