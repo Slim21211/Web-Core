@@ -6,8 +6,6 @@ const hiddenTextOne = document.querySelector('.hidden-text-1')
 const hiddenTextTwo = document.querySelector('.hidden-text-2')
 const hiddenTextThree = document.querySelector('.hidden-text-3')
 
-console.log(menuList);
-
 for (let i = 0; i < menuList.length; i++) {
     menuList[i].addEventListener('click', function(evt) {
         for (let k = 0; k < menuList.length; k++) {

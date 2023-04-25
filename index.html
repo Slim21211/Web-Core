@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link href="styles/repair-style.css" rel="stylesheet" type="text/css" />
   <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/gadgets-style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -41,7 +42,7 @@
       <h1 class="title__text">Услуги и сервисы</h1>
     </div>
   </div>
-  <main class="main">
+  <section class="main">
     <div class="body-wrapper">
       <nav class="body-wrapper__item menu">
         <ul class="menu__list list">
@@ -62,16 +63,14 @@
         </div>
         <img class="body-wrapper__item cps-image" src="img/pics/CPS.jpg" alt="">
       </div>
-      
     </div>
-    
-  </main>
+  </section>
 
-  <div class="repair-container">
+  <section class="repair-container">
     <header class="repair-container__item repair-header">
         Ремонт техники различных брендов
     </header>
-    <main class="repair-container__item repair-main swiper">
+    <div class="repair-container__item repair-main swiper">
         <div class="repair-main__item label-wrapper swiper-wrapper">
             <button class="label-wrapper__item swiper-slide"></button>
             <button class="label-wrapper__item swiper-slide"></button>
@@ -84,16 +83,34 @@
             <button class="label-wrapper__item swiper-slide"></button>
             <button class="label-wrapper__item swiper-slide"></button>
             <button class="label-wrapper__item swiper-slide"></button>
-            
         </div>
         <div class="repair-main__item buttons-wrapper">
             <button class="buttons-wrapper__item expand">Показать все</button>
         </div>
         <div class="swiper-pagination"></div>
-    </main>
-  </div>
+    </div>
+  </section>
+
+  <section class="repair-gadgets">
+    <div class="repair-gadgets__item repair-gadgets-header">Ремонт различных видов техники</div>
+    <div class="repair-gadgets__item gadgets-wrapper swiper">
+      <div class="swiper-wrapper">
+        <button class="gadgets-wrapper__item swiper-slide"><span class="gadgets-wrapper__item_name">Ремонт ноутбуков</span></button>
+        <button class="gadgets-wrapper__item swiper-slide"><span class="gadgets-wrapper__item_name">Ремонт планшетов</span></button>
+        <button class="gadgets-wrapper__item swiper-slide"><span class="gadgets-wrapper__item_name">Ремонт ПК</span></button>
+        <button class="gadgets-wrapper__item swiper-slide"><span class="gadgets-wrapper__item_name">Ремонт мониторов</span></button>
+        <button class="gadgets-wrapper__item swiper-slide"><span class="gadgets-wrapper__item_name">Ремонт телефонов</span></button>
+        <button class="gadgets-wrapper__item swiper-slide"><span class="gadgets-wrapper__item_name">Ремонт наушников</span></button>
+        <button class="gadgets-wrapper__item swiper-slide"><span class="gadgets-wrapper__item_name">Ремонт часов</span></button>
+        <button class="gadgets-wrapper__item swiper-slide"><span class="gadgets-wrapper__item_name">Ремонт принтеров</span></button>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/repair-script.js"></script>
+  <script src="js/gadgets-script.js"></script>
   <script src="js/script.js"></script>
 </body>
 

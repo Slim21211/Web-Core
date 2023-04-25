@@ -316,6 +316,9 @@ body {
   background-image: url(/img/icons/expand.png);
   transform: rotate(180deg);
 }
+.return:hover {
+  cursor: pointer;
+}
 
 @media (min-width: 320px) {
   .icon-description {

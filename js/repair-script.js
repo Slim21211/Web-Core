@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiperRepair = new Swiper('.repair-main', {
     spaceBetween: 16,
     slidesOffsetBefore: 16,
     slidesOffsetAfter: 16,

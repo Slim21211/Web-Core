@@ -1,0 +1,64 @@
+@font-face {
+  font-family: TT Lakes-Regular;
+  src: url("/fonts/TTLakes-Regular.ttf"); }
+@font-face {
+  font-family: TT Lakes-Bold;
+  src: url("/fonts/TTLakes-Bold.ttf"); }
+@font-face {
+  font-family: TT Lakes-Medium;
+  src: url("/fonts/TTLakes-Medium.ttf"); }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.repair-gadgets__item:first-child {
+  padding: 16px;
+  margin-bottom: 16px;
+  background: -webkit-gradient(linear, right top, left top, from(#F8F8F8), color-stop(98.61%, #FFFFFF));
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%); }
+
+.repair-gadgets__item:last-child {
+  height: 228px; }
+
+.repair-gadgets-header {
+  font-family: 'TT Lakes-Regular';
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -.2px;
+  color: #7E7E82;
+  text-transform: uppercase; }
+
+.gadgets-wrapper__item {
+  position: relative;
+  width: 240px;
+  height: 160px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px; }
+
+.gadgets-wrapper__item_name {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: 'TT Lakes-Medium';
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -.2px;
+  color: #1B1C21; }
+
+.gadgets-wrapper__item::after {
+  content: '';
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("/img/icons/go.png"); }
+
+.swiper-pagination {
+  bottom: 24px !important; }
+
+/*# sourceMappingURL=gadgets-style.css.map */
