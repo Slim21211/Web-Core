@@ -216,8 +216,11 @@ body {
   background-color: #FFFFFF;
 }
 
+.text-wrapper__item {
+  margin-bottom: 10px;
+}
+
 .text {
-  margin: 0;
   height: auto;
   width: auto;
   font-family: TT Lakes-Regular;
@@ -263,7 +266,7 @@ body {
 }
 
 .body-wrapper__item {
-  margin-top: 0;
+  margin-top: 10px;
   padding: 0 16px;
   padding-bottom: 0;
 }
