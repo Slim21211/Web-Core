@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -259,8 +261,6 @@ body {
 }
 
 .text-wrapper {
-  margin: 0;
-  padding: 0;
   margin-top: 16px;
   margin-bottom: 20px;
 }
@@ -289,6 +289,34 @@ body {
   margin-top: 16px;
 }
 
+.return {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+  font-family: TT Lakes-Medium;
+  font-weight: 500;
+  font-size: 14px;
+  background-color:#F8F8F8;
+  border: none;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+}
+
+.return::before {
+  display: block;
+  content: "";
+  margin: 0;
+  padding: 0;
+  margin-right: 9px;
+  width: 24px;
+  height: 24px;
+  background-image: url(/img/icons/expand.png);
+  transform: rotate(180deg);
+}
+
 @media (min-width: 320px) {
   .icon-description {
     display: none;
@@ -310,6 +338,12 @@ body {
   }
   .hidden-text-2 {
     display: none;
+  }
+  .hidden-text-3 {
+    display: none;
+  }
+  .open-text {
+    display: inline;
   }
 }
 
@@ -348,9 +382,6 @@ body {
   }
   .text {
     line-height: 20px;
-  }
-  .text-wrapper {
-    margin: 0;
   }
 }
 
