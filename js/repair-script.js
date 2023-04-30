@@ -47,7 +47,6 @@ expandButton.addEventListener('click', function() {
         for (let i = 0; i < labels.length; i++) {
             labels[i].classList.remove('label-wrapper__item_hidden');
         }
-        labelWrapper.classList.add('label-wrapper-medium');
         repairMain.classList.add('repair-main_expanded');
         expandButton.textContent = collapseButtonValue;
         expandButton.classList.remove('expand');

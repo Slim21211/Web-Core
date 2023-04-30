@@ -1,0 +1,135 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.prices {
+    background-color: $dark_white;
+}
+
+.prices__item:first-child {
+    padding: 16px;
+    margin-bottom: 16px;
+    background: linear-gradient(270deg, $dark_white 0%, $white 98.61%);
+}
+
+.prices__item:nth-child(2) {
+    padding-left: 8px;
+    height: 248px;
+}
+
+
+.prices-header {
+    font-family: 'TT Lakes-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -.2px;
+    color: $grey;
+    text-transform: uppercase;
+}
+
+.prices-wrapper__item {
+    position: relative;
+    width: 260px;
+    height: 200px;
+    padding: 16px;
+    background: $white;
+    border-radius: 6px;
+    font-family: 'TT Lakes-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .2px;
+    color: $light_black;
+}
+
+.prices-card-header {
+    font-family: 'TT Lakes-Medium';
+    font-weight: 500;
+    font-size: 14px;
+    color: $grey;
+    opacity: 0.72;
+}
+
+.order-button-wrapper {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+
+.order-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 119px;
+    height: 32px;
+    background: $pink;
+    border-radius: 16px;
+    border: none;
+}
+
+.order-button__item:first-child {
+    font-family: 'TT Lakes-Bold';
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.order-button__item:last-child {
+    width: 7px;
+    height: 9.63px;
+    background: url(../img/icons/dropdown.png);
+}
+
+.swiper-pagination {
+    bottom: 16px !important;
+}
+
+.prices__item:nth-child(3) {
+    padding: 16px;
+    font-family: 'TT Lakes-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .2px;
+    color: $light_black;
+}
+
+.prices__item:nth-child(4) {
+    padding: 16px;
+}
+
+.get-offer-button {
+    border: none;
+    background: $dark_white;
+    display: flex;
+}
+
+.get-offer-button:hover {
+    cursor: pointer;
+}
+
+.get-offer-button__item:first-child {
+    position: relative;
+    font-family: 'TT Lakes-Medium';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -.2px;
+    color: $light_black;
+    text-align: start;
+}
+
+.line {
+    position: absolute;
+    left: 111.4px;
+    top: 27px;
+    width: 24px;
+    height: 27.49px;
+    background: url(../img/icons/Line.png) no-repeat;
+}
+
