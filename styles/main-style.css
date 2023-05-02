@@ -1,12 +1,12 @@
 @font-face {
   font-family: TT Lakes-Regular;
-  src: url("/fonts/TTLakes-Regular.ttf"); }
+  src: url("../fonts/TTLakes-Regular.ttf"); }
 @font-face {
   font-family: TT Lakes-Bold;
-  src: url("/fonts/TTLakes-Bold.ttf"); }
+  src: url("../fonts/TTLakes-Bold.ttf"); }
 @font-face {
   font-family: TT Lakes-Medium;
-  src: url("/fonts/TTLakes-Medium.ttf"); }
+  src: url("../fonts/TTLakes-Medium.ttf"); }
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -71,7 +71,7 @@
   margin: 0;
   width: 40px;
   height: 40px;
-  background-image: url(/img/icons/burger.png); }
+  background-image: url(../img/icons/burger.png); }
   .menu-icon:hover {
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
@@ -113,7 +113,7 @@
   margin: 0;
   width: 40px;
   height: 40px;
-  background: #FFFFFF url(/img/icons/call.png);
+  background: #FFFFFF url(../img/icons/call.png);
   border: none; }
   .call:hover {
     -webkit-transition-property: -webkit-transform;
@@ -140,7 +140,7 @@
   margin: 0;
   width: 40px;
   height: 40px;
-  background: #FFFFFF url(/img/icons/profile.png);
+  background: #FFFFFF url(../img/icons/profile.png);
   border: none; }
   .profile:hover {
     -webkit-transition-property: -webkit-transform;
@@ -167,7 +167,7 @@
   margin: 0;
   width: 40px;
   height: 40px;
-  background: #FFFFFF url(/img/icons/chat.png);
+  background: #FFFFFF url(../img/icons/chat.png);
   border: none; }
   .chat:hover {
     -webkit-transition-property: -webkit-transform;
@@ -194,7 +194,7 @@
   margin: 0;
   width: 40px;
   height: 40px;
-  background: #FFFFFF url(/img/icons/repair.png); }
+  background: #FFFFFF url(../img/icons/repair.png); }
   .repair-icon:hover {
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
@@ -217,7 +217,7 @@
 @media (min-width: 1120px) {
   .icon-description {
     display: block;
-    font-family: TT Lakes-Medium;
+    font-family: 'TT Lakes-Medium';
     font-weight: 500;
     font-size: 16px; } }
 
@@ -226,7 +226,7 @@
   margin: 0;
   width: 40px;
   height: 40px;
-  background-image: url(/img/icons/checkstatus.png); }
+  background-image: url(../img/icons/checkstatus.png); }
   .checkstatus-icon:hover {
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
@@ -263,7 +263,7 @@
     padding: 0;
     height: 40px;
     font-size: 28px;
-    font-family: TT Lakes-Bold;
+    font-family: 'TT Lakes-Bold';
     font-weight: 700; }
   @media (min-width: 1120px) {
     .title {
@@ -389,7 +389,7 @@
     margin-right: 8px;
     width: 24px;
     height: 24px;
-    background-image: url(/img/icons/expand.png); }
+    background-image: url(../img/icons/expand.png); }
   .continue:hover {
     cursor: pointer; }
 
@@ -437,7 +437,7 @@
     margin-right: 9px;
     width: 24px;
     height: 24px;
-    background-image: url(/img/icons/expand.png);
+    background-image: url(../img/icons/expand.png);
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
   .return:hover {

@@ -1,12 +1,12 @@
 @font-face {
   font-family: TT Lakes-Regular;
-  src: url("/fonts/TTLakes-Regular.ttf"); }
+  src: url("../fonts/TTLakes-Regular.ttf"); }
 @font-face {
   font-family: TT Lakes-Bold;
-  src: url("/fonts/TTLakes-Bold.ttf"); }
+  src: url("../fonts/TTLakes-Bold.ttf"); }
 @font-face {
   font-family: TT Lakes-Medium;
-  src: url("/fonts/TTLakes-Medium.ttf"); }
+  src: url("../fonts/TTLakes-Medium.ttf"); }
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -27,7 +27,7 @@
   background: #F8F8F8; }
 
 .repair-header {
-  font-family: TT Lakes-Regular;
+  font-family: 'TT Lakes-Regular';
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -66,7 +66,7 @@
       width: 40px;
       height: 40px;
       margin-left: 184px;
-      background: url("/img/icons/go.png"); }
+      background: url("../img/icons/go.png"); }
       @media (min-width: 768px) {
         .label-wrapper__item::after {
           margin-left: 168px; } }
@@ -74,27 +74,27 @@
       .label-wrapper__item:hover {
         cursor: pointer; } }
     .label-wrapper__item:nth-child(1) {
-      background: 16px 50% url("/img/labels/BitmapLenovo.png") no-repeat; }
+      background: 16px 50% url("../img/labels/BitmapLenovo.png") no-repeat; }
     .label-wrapper__item:nth-child(2) {
-      background: 16px 50% url("/img/labels/BitmapSamsung.png") no-repeat; }
+      background: 16px 50% url("../img/labels/BitmapSamsung.png") no-repeat; }
     .label-wrapper__item:nth-child(3) {
-      background: 16px 50% url("/img/labels/BitmapApple.png") no-repeat; }
+      background: 16px 50% url("../img/labels/BitmapApple.png") no-repeat; }
     .label-wrapper__item:nth-child(4) {
-      background: 16px 50% url("/img/labels/BitmapViewSonic.png") no-repeat; }
+      background: 16px 50% url("../img/labels/BitmapViewSonic.png") no-repeat; }
     .label-wrapper__item:nth-child(5) {
-      background: 16px 50% url("/img/labels/BitmapBosch.png") no-repeat; }
+      background: 16px 50% url("../img/labels/BitmapBosch.png") no-repeat; }
     .label-wrapper__item:nth-child(6) {
-      background: 16px 50% url("/img/labels/BitmapHP.png") no-repeat; }
+      background: 16px 50% url("../img/labels/BitmapHP.png") no-repeat; }
     .label-wrapper__item:nth-child(7) {
-      background: 16px 50% url("/img/labels/BitmapAcer.png") no-repeat; }
+      background: 16px 50% url("../img/labels/BitmapAcer.png") no-repeat; }
     .label-wrapper__item:nth-child(8) {
-      background: 16px 50% url("/img/labels/BitmapSony.png") no-repeat; }
+      background: 16px 50% url("../img/labels/BitmapSony.png") no-repeat; }
     .label-wrapper__item:nth-child(9) {
-      background: 16px 50% url("/img/labels/BitmapLenovo.png") no-repeat; }
+      background: 16px 50% url("../img/labels/BitmapLenovo.png") no-repeat; }
     .label-wrapper__item:nth-child(10) {
-      background: 16px 50% url("/img/labels/BitmapSamsung.png") no-repeat; }
+      background: 16px 50% url("../img/labels/BitmapSamsung.png") no-repeat; }
     .label-wrapper__item:nth-child(11) {
-      background: 16px 50% url("/img/labels/BitmapApple.png") no-repeat; }
+      background: 16px 50% url("../img/labels/BitmapApple.png") no-repeat; }
     .label-wrapper__item_hidden {
       display: none; }
   @media (min-width: 768px) {
@@ -166,7 +166,7 @@
       padding: 0;
       height: auto;
       width: auto;
-      font-family: TT Lakes-Medium;
+      font-family: 'TT Lakes-Medium';
       font-weight: 500;
       font-size: 16px;
       background-color: #F8F8F8;
@@ -182,7 +182,7 @@
       margin-right: 9px;
       width: 24px;
       height: 24px;
-      background-image: url(/img/icons/expand.png); } }
+      background-image: url(../img/icons/expand.png); } }
   @media (min-width: 768px) {
     .expand:hover {
       cursor: pointer; } }
@@ -203,7 +203,7 @@
       padding: 0;
       height: auto;
       width: auto;
-      font-family: TT Lakes-Medium;
+      font-family: 'TT Lakes-Medium';
       font-weight: 500;
       font-size: 16px;
       background-color: #F8F8F8;
@@ -219,7 +219,7 @@
       margin-right: 9px;
       width: 24px;
       height: 24px;
-      background-image: url(/img/icons/expand.png);
+      background-image: url(../img/icons/expand.png);
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); } }
 

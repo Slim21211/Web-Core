@@ -24,7 +24,7 @@
 }
 
 .repair-header {
-    font-family: TT Lakes-Regular;
+    font-family: 'TT Lakes-Regular';
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -62,7 +62,7 @@
             width: 40px;
             height: 40px;
             margin-left: 184px;
-            background: url('/img/icons/go.png');
+            background: url('../img/icons/go.png');
             @media (min-width: 768px) {
                 margin-left: 168px;
             }
@@ -74,37 +74,37 @@
         }
         
         &:nth-child(1) {
-            background: 16px 50% url('/img/labels/BitmapLenovo.png') no-repeat;
+            background: 16px 50% url('../img/labels/BitmapLenovo.png') no-repeat;
         }
         &:nth-child(2) {
-            background: 16px 50% url('/img/labels/BitmapSamsung.png') no-repeat;
+            background: 16px 50% url('../img/labels/BitmapSamsung.png') no-repeat;
         }
         &:nth-child(3) {
-            background: 16px 50% url('/img/labels/BitmapApple.png') no-repeat;
+            background: 16px 50% url('../img/labels/BitmapApple.png') no-repeat;
         }
         &:nth-child(4) {
-            background: 16px 50% url('/img/labels/BitmapViewSonic.png') no-repeat;
+            background: 16px 50% url('../img/labels/BitmapViewSonic.png') no-repeat;
         }
         &:nth-child(5) {
-            background: 16px 50% url('/img/labels/BitmapBosch.png') no-repeat;
+            background: 16px 50% url('../img/labels/BitmapBosch.png') no-repeat;
         }
         &:nth-child(6) {
-            background: 16px 50% url('/img/labels/BitmapHP.png') no-repeat;
+            background: 16px 50% url('../img/labels/BitmapHP.png') no-repeat;
         }
         &:nth-child(7) {
-            background: 16px 50% url('/img/labels/BitmapAcer.png') no-repeat;
+            background: 16px 50% url('../img/labels/BitmapAcer.png') no-repeat;
         }
         &:nth-child(8) {
-            background: 16px 50% url('/img/labels/BitmapSony.png') no-repeat;
+            background: 16px 50% url('../img/labels/BitmapSony.png') no-repeat;
         }
         &:nth-child(9) {
-            background: 16px 50% url('/img/labels/BitmapLenovo.png') no-repeat;
+            background: 16px 50% url('../img/labels/BitmapLenovo.png') no-repeat;
         }
         &:nth-child(10) {
-            background: 16px 50% url('/img/labels/BitmapSamsung.png') no-repeat;
+            background: 16px 50% url('../img/labels/BitmapSamsung.png') no-repeat;
         }
         &:nth-child(11) {
-            background: 16px 50% url('/img/labels/BitmapApple.png') no-repeat;
+            background: 16px 50% url('../img/labels/BitmapApple.png') no-repeat;
         }
         &_hidden {
             display: none;
@@ -182,7 +182,7 @@
         padding: 0;
         height: auto;
         width: auto;
-        font-family: TT Lakes-Medium;
+        font-family: 'TT Lakes-Medium';
         font-weight: 500;
         font-size: 16px;
         background-color: $dark-white;
@@ -199,7 +199,7 @@
             margin-right: 9px;
             width: 24px;
             height: 24px;
-            background-image: url(/img/icons/expand.png);
+            background-image: url(../img/icons/expand.png);
         }
     }
     &:hover {
@@ -221,7 +221,7 @@
         padding: 0;
         height: auto;
         width: auto;
-        font-family: TT Lakes-Medium;
+        font-family: 'TT Lakes-Medium';
         font-weight: 500;
         font-size: 16px;
         background-color: $dark-white;
@@ -238,7 +238,7 @@
             margin-right: 9px;
             width: 24px;
             height: 24px;
-            background-image: url(/img/icons/expand.png);
+            background-image: url(../img/icons/expand.png);
             transform: rotate(180deg);
         }
     }
