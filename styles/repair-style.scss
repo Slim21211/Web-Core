@@ -8,18 +8,21 @@
 }
 
 .repair-container {
+    background: $dark-white;
     @media  (min-width: 1120px) {
         max-width: 1120px;
         margin: 0 auto;
     }
     &__item:nth-child(1) {
         padding: 16px;
+        margin-bottom: 24px;
         background: linear-gradient(270deg, $dark-white 0%, $white 98.61%);
     }
     &__item:nth-child(2) {
-        padding: 16px;
-        padding-left: 0;
-        background: $dark-white;
+        margin-bottom: 24px;
+    }
+    &__item:nth-child(3) {
+        padding-bottom: 32px;
     }
 }
 
@@ -36,7 +39,7 @@
 .label-wrapper {
     height: 122px;
     @media (min-width: 768px) {
-        height: 96px !important;
+        height: 160px !important;
         display: grid;
         grid-template-columns: repeat(3, minmax(224px, 1fr));
         grid-template-rows: repeat(2, 72px);
@@ -131,6 +134,7 @@
         width: 24px;
         height: 81px;
         background: linear-gradient(270deg, $dark-white 16.84%, $dark_red 100%);
+        z-index: 1;
         @media (min-width: 768px) {
             display: none;
         }
@@ -139,7 +143,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 242px;
+        height: 160px;
     }
     &__item {
         &:nth-child(2)  {
@@ -241,12 +245,6 @@
             background-image: url(../img/icons/expand.png);
             transform: rotate(180deg);
         }
-    }
-}
-
-.swiper-slide {
-    @media (min-width: 768px) {
-        width: 224px !important;
     }
 }
 

@@ -488,3 +488,26 @@
         -ms-flex-align: center;
             align-items: center;
     background-color: #F8F8F8; } }
+
+.main-footer {
+  background: #F8F8F8;
+  font-family: 'TT Lakes-Medium';
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #7E7E82; }
+  @media (min-width: 768px) {
+    .main-footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 81px; } }
+  .main-footer__item {
+    margin-bottom: 16px; }
+    @media (min-width: 768px) {
+      .main-footer__item:nth-child(1) {
+        text-align: start;
+        margin-left: 24px; } }
+    @media (min-width: 768px) {
+      .main-footer__item:nth-child(3) {
+        text-align: end;
+        margin-left: 24px; } }

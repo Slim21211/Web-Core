@@ -452,3 +452,32 @@
         background-color: $dark_white;
     }
 }
+
+.main-footer {
+    background: $dark_white;
+    font-family: 'TT Lakes-Medium';
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: $grey;
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 81px;
+    }
+    &__item {
+        margin-bottom: 16px;
+        &:nth-child(1) {
+            @media (min-width: 768px) {
+                text-align: start;
+                margin-left: 24px;
+            }
+        }
+        &:nth-child(3) {
+            @media (min-width: 768px) {
+                text-align: end;
+                margin-left: 24px;
+            }
+        }
+    }
+}

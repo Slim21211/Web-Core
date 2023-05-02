@@ -9,19 +9,38 @@
 
 .prices {
     background-color: $dark_white;
+    &__item:first-child {
+        padding: 16px;
+        margin-bottom: 16px;
+        background: linear-gradient(270deg, $dark_white 0%, $white 98.61%);
+    }
+    &__item:nth-child(2) {
+        padding-left: 8px;
+        height: 248px;
+        @media (min-width: 768px) {
+            height: 388px;
+            padding: 0;
+            padding-right: 40px;
+            margin: 0;
+        }
+    }
+    &__item:nth-child(3) {
+        margin: 24px;
+        margin-bottom: 16px;
+        font-family: 'TT Lakes-Regular';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: .2px;
+        color: $light_black;
+        @media (min-width: 768px) {
+            width: 421px;
+        }
+    }
+    &__item:nth-child(4) {
+        padding: 16px 16px 40px 16px;
+    }
 }
-
-.prices__item:first-child {
-    padding: 16px;
-    margin-bottom: 16px;
-    background: linear-gradient(270deg, $dark_white 0%, $white 98.61%);
-}
-
-.prices__item:nth-child(2) {
-    padding-left: 8px;
-    height: 248px;
-}
-
 
 .prices-header {
     font-family: 'TT Lakes-Regular';
@@ -32,18 +51,32 @@
     text-transform: uppercase;
 }
 
-.prices-wrapper__item {
-    position: relative;
-    width: 260px;
-    height: 200px;
-    padding: 16px;
-    background: $white;
-    border-radius: 6px;
-    font-family: 'TT Lakes-Regular';
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: .2px;
-    color: $light_black;
+.prices-wrapper {
+    @media (min-width: 768px) {
+        display: grid;
+        min-width: 720px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 64px);
+        background: $white;
+        margin: 0;
+    }
+    &__item {
+        position: relative;
+        width: 260px;
+        height: 200px;
+        padding: 16px;
+        background: $white;
+        border-radius: 6px;
+        font-family: 'TT Lakes-Regular';
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: .2px;
+        color: $light_black;
+        @media (min-width: 768px) {
+            width: 100%;
+            height: 64px;
+        }
+    }
 }
 
 .prices-card-header {
@@ -52,12 +85,18 @@
     font-size: 14px;
     color: $grey;
     opacity: 0.72;
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
 
 .order-button-wrapper {
     position: absolute;
     right: 16px;
     bottom: 16px;
+    @media (min-width: 768px) {
+        position: static;
+    }
 }
 
 .order-button {
@@ -69,67 +108,102 @@
     background: $pink;
     border-radius: 16px;
     border: none;
-}
-
-.order-button__item:first-child {
-    font-family: 'TT Lakes-Bold';
-    font-weight: 700;
-    font-size: 12px;
-    letter-spacing: -0.15px;
-    text-transform: uppercase;
-    color: $white;
-}
-
-.order-button__item:last-child {
-    width: 7px;
-    height: 9.63px;
-    background: url(../img/icons/dropdown.png);
+    &:hover {
+        cursor: pointer;
+    }
+    &__item:first-child {
+        font-family: 'TT Lakes-Bold';
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        color: $white;
+    }
+    &__item:last-child {
+        width: 7px;
+        height: 9.63px;
+        background: url(../img/icons/dropdown.png);
+    }
+    &_hidden {
+        visibility: hidden;
+    }
 }
 
 .swiper-pagination {
     bottom: 16px !important;
 }
 
-.prices__item:nth-child(3) {
-    padding: 16px;
-    font-family: 'TT Lakes-Regular';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: .2px;
-    color: $light_black;
-}
-
-.prices__item:nth-child(4) {
-    padding: 16px;
-}
-
 .get-offer-button {
+    position: relative;
     border: none;
     background: $dark_white;
     display: flex;
-}
-
-.get-offer-button:hover {
-    cursor: pointer;
-}
-
-.get-offer-button__item:first-child {
-    position: relative;
+    width: 202px;
+    height: 54px;
     font-family: 'TT Lakes-Medium';
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -.2px;
     color: $light_black;
     text-align: start;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 27px;
+        left: 110px;
+        width: 24px;
+        height: 27.49px;
+        background: url(../img/icons/Line.png) no-repeat;
+        @media (min-width: 768px) {
+            top: 6px;
+            left: 300px;
+        }
+    }
+    @media (min-width: 768px) {
+        width: 316px;
+    }
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-.line {
-    position: absolute;
-    left: 111.4px;
-    top: 27px;
-    width: 24px;
-    height: 27.49px;
-    background: url(../img/icons/Line.png) no-repeat;
+.prices-card {
+    &:nth-child(1) {
+        display: none;
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $dark-white;
+            color: $grey;
+        }
+    }
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        &:nth-child(2) {
+            @media (min-width: 768px) {
+                min-width: 348px;
+            }
+        }
+        &:nth-child(4) {
+            @media (min-width: 768px) {
+                min-width: 74px;
+            }
+        }
+        &:nth-child(6) {
+            @media (min-width: 768px) {
+                width: 81px;
+            }
+        }
+        &:nth-child(7) {
+            @media (min-width: 768px) {
+                width: 119px;
+            }
+        }
+    }
 }
 

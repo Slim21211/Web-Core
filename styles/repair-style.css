@@ -13,18 +13,21 @@
   margin: 0;
   padding: 0; }
 
-@media (min-width: 1120px) {
-  .repair-container {
-    max-width: 1120px;
-    margin: 0 auto; } }
-.repair-container__item:nth-child(1) {
-  padding: 16px;
-  background: -webkit-gradient(linear, right top, left top, from(#F8F8F8), color-stop(98.61%, #FFFFFF));
-  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%); }
-.repair-container__item:nth-child(2) {
-  padding: 16px;
-  padding-left: 0;
+.repair-container {
   background: #F8F8F8; }
+  @media (min-width: 1120px) {
+    .repair-container {
+      max-width: 1120px;
+      margin: 0 auto; } }
+  .repair-container__item:nth-child(1) {
+    padding: 16px;
+    margin-bottom: 24px;
+    background: -webkit-gradient(linear, right top, left top, from(#F8F8F8), color-stop(98.61%, #FFFFFF));
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%); }
+  .repair-container__item:nth-child(2) {
+    margin-bottom: 24px; }
+  .repair-container__item:nth-child(3) {
+    padding-bottom: 32px; }
 
 .repair-header {
   font-family: 'TT Lakes-Regular';
@@ -39,7 +42,7 @@
   height: 122px; }
   @media (min-width: 768px) {
     .label-wrapper {
-      height: 96px !important;
+      height: 160px !important;
       display: grid;
       grid-template-columns: repeat(3, minmax(224px, 1fr));
       grid-template-rows: repeat(2, 72px);
@@ -114,7 +117,8 @@
   width: 24px;
   height: 81px;
   background: -webkit-gradient(linear, right top, left top, color-stop(16.84%, #F8F8F8), to(rgba(248, 248, 248, 0.0001)));
-  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  z-index: 1; }
   @media (min-width: 768px) {
     .repair-main::after {
       display: none; } }
@@ -130,7 +134,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 242px; } }
+    height: 160px; } }
 @media (min-width: 768px) {
   .repair-main__item:nth-child(2) {
     padding-left: 24px; } }
@@ -222,10 +226,6 @@
       background-image: url(../img/icons/expand.png);
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); } }
-
-@media (min-width: 768px) {
-  .swiper-slide {
-    width: 224px !important; } }
 
 @media (min-width: 768px) {
   .swiper-pagination {

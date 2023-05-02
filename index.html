@@ -136,10 +136,11 @@
                 <button class="label-wrapper__item swiper-slide"></button>
                 <button class="label-wrapper__item swiper-slide"></button>
             </div>
-            <div class="repair-main__item buttons-wrapper">
-                <button class="buttons-wrapper__item expand">Показать все</button>
-            </div>
+            
             <div class="swiper-pagination"></div>
+        </div>
+        <div class="repair-container__item buttons-wrapper">
+          <button class="buttons-wrapper__item expand">Показать все</button>
         </div>
       </section>
     
@@ -167,13 +168,27 @@
         <div class="prices__item prices-header">Цены на услуги</div>
         <div class="prices__item prices-swiper swiper">
           <div class="prices-wrapper swiper-wrapper">
-            <div class="prices-wrapper__item swiper-slide">
-              <span class="prices-card-header">Ремонтные услуги</span><br>
-              Диагностика<br><br>
-              <span class="prices-card-header">Цена</span><br>
-              Бесплатно<br><br>
-              <span class="prices-card-header">Срок</span><br>
-              30 мин
+            <div class="prices-wrapper__item prices-card swiper-slide">
+              <div class='prices-card__item prices-card-header'></div>
+              <span class="prices-card__item prices-table-header">Ремонтные услуги</span>
+              <div class='prices-card__item prices-card-header'></div>
+              <span class="prices-card__item prices-table-header">Цена</span>
+              <div class='prices-card__item prices-card-header'></div>
+              <span class="prices-card__item prices-table-header">Срок</span>
+              <div class="order-button-wrapper">
+                <button class="order-button order-button_hidden">
+                  <span class="order-button__item">Заказать</span>
+                  <div class="order-button__item"></div>
+                </button>
+              </div>
+            </div>
+            <div class="prices-wrapper__item prices-card swiper-slide">
+              <span class="prices-card-header">Ремонтные услуги<br></span>
+              <span class="prices-card__item">Диагностика</span>
+              <span class="prices-card-header"><br><br>Цена<br></span>
+              <span class="prices-card__item">Бесплатно</span>
+              <span class="prices-card-header"><br><br>Срок<br></span>
+              <span class="prices-card__item">30 мин</span>
               <div class="order-button-wrapper">
                 <button class="order-button">
                   <span class="order-button__item">Заказать</span>
@@ -181,13 +196,13 @@
                 </button>
               </div>
             </div>
-            <div class="prices-wrapper__item swiper-slide">
-              <span class="prices-card-header">Ремонтные услуги</span><br>
-              Замена дисплея<br><br>
-              <span class="prices-card-header">Цена</span><br>
-              1 000 ₽<br><br>
-              <span class="prices-card-header">Срок</span><br>
-              30-120 мин
+            <div class="prices-wrapper__item prices-card swiper-slide">
+              <span class="prices-card-header">Ремонтные услуги<br></span>
+              <span class="prices-card__item">Замена дисплея</span>
+              <span class="prices-card-header"><br><br>Цена<br></span>
+              <span class="prices-card__item">1 000 ₽</span>
+              <span class="prices-card-header"><br><br>Срок<br></span>
+              <span class="prices-card__item">30-120 мин</span>
               <div class="order-button-wrapper">
                 <button class="order-button">
                   <span class="order-button__item">Заказать</span>
@@ -195,13 +210,13 @@
                 </button>
               </div>
             </div>
-            <div class="prices-wrapper__item swiper-slide">
-              <span class="prices-card-header">Ремонтные услуги</span><br>
-              Замена полифонического динамика<br><br>
-              <span class="prices-card-header">Цена</span><br>
-              1 000 ₽<br><br>
-              <span class="prices-card-header">Срок</span><br>
-              30-120 мин
+            <div class="prices-wrapper__item prices-card swiper-slide">
+              <span class="prices-card-header">Ремонтные услуги<br></span>
+              <span class="prices-card__item">Замена полифонического динамика</span>
+              <span class="prices-card-header"><br><br>Цена<br></span>
+              <span class="prices-card__item">1 000 ₽</span>
+              <span class="prices-card-header"><br><br>Срок<br></span>
+              <span class="prices-card__item">30-120 мин</span>
               <div class="order-button-wrapper">
                 <button class="order-button">
                   <span class="order-button__item">Заказать</span>
@@ -209,13 +224,13 @@
                 </button>
               </div>
             </div>
-            <div class="prices-wrapper__item swiper-slide">
-              <span class="prices-card-header">Ремонтные услуги</span><br>
-              Тестирование с выдачей технического заключения<br><br>
-              <span class="prices-card-header">Цена</span><br>
-              1 000 ₽<br><br>
-              <span class="prices-card-header">Срок</span><br>
-              30-120 мин
+            <div class="prices-wrapper__item prices-card swiper-slide">
+              <span class="prices-card-header">Ремонтные услуги<br></span>
+              <span class="prices-card__item">Тестирование с выдачей технического заключения</span>
+              <span class="prices-card-header"><br><br>Цена<br></span>
+              <span class="prices-card__item">1 000 ₽</span>
+              <span class="prices-card-header"><br><br>Срок<br></span>
+              <span class="prices-card__item">30-120 мин</span>
               <div class="order-button-wrapper">
                 <button class="order-button">
                   <span class="order-button__item">Заказать</span>
@@ -223,13 +238,13 @@
                 </button>
               </div>
             </div>
-            <div class="prices-wrapper__item swiper-slide">
-              <span class="prices-card-header">Ремонтные услуги</span><br>
-              Замена программного обеспечения<br><br>
-              <span class="prices-card-header">Цена</span><br>
-              1 000 ₽<br><br>
-              <span class="prices-card-header">Срок</span><br>
-              30-120 мин
+            <div class="prices-wrapper__item prices-card swiper-slide">
+              <span class="prices-card-header">Ремонтные услуги<br></span>
+              <span class="prices-card__item">Замена программного обеспечения</span>
+              <span class="prices-card-header"><br><br>Цена<br></span>
+              <span class="prices-card__item">1 000 ₽</span>
+              <span class="prices-card-header"><br><br>Срок<br></span>
+              <span class="prices-card__item">30-120 мин</span>
               <div class="order-button-wrapper">
                 <button class="order-button">
                   <span class="order-button__item">Заказать</span>
@@ -243,18 +258,17 @@
         <div class="prices__item">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</div>
         <div class="prices__item">
           <button class="get-offer-button">
-            <span class="get-offer-button__item">Получить коммерческое предложение
-              <div class="line"></div>
-            </span>
+            <span class="get-offer-button__item">Получить коммерческое предложение</span>
+              <!-- <div class="line"></div> -->
           </button>
         </div>
       </section>
 
-      <!-- <footer class="main-footer">
+      <footer class="main-footer">
         <div class="main-footer__item">© 2019 CPS<br>Разработано командой Apesong </div>
         <div class="main-footer__item">Политика конфиденциальности</div>
         <div class="main-footer__item">Информация, размещенная на данной странице, не является публичной офертой</div>
-      </footer> -->
+      </footer>
     </div>
   </div>
   
