@@ -13,9 +13,12 @@
         padding: 16px;
         margin-bottom: 16px;
         background: linear-gradient(270deg, $dark_white 0%, $white 98.61%);
+        @media (min-width: 768px) {
+            padding: 16px 24px;
+        }
     }
     &__item:nth-child(2) {
-        padding-left: 8px;
+        // padding-left: 8px;
         height: 248px;
         @media (min-width: 768px) {
             height: 388px;
@@ -25,7 +28,7 @@
         }
     }
     &__item:nth-child(3) {
-        margin: 24px;
+        margin: 16px;
         margin-bottom: 16px;
         font-family: 'TT Lakes-Regular';
         font-weight: 400;
@@ -34,11 +37,15 @@
         letter-spacing: .2px;
         color: $light_black;
         @media (min-width: 768px) {
+            margin: 24px;
             width: 421px;
         }
     }
     &__item:nth-child(4) {
         padding: 16px 16px 40px 16px;
+        @media (min-width: 768px) {
+            padding: 16px 16px 40px 24px;
+        }
     }
 }
 
