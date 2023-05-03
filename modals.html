@@ -8,26 +8,23 @@
     <link href="styles/modals-style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <section class="feedback feedback_hidden">
-        <div class="feedback__item">
+    <form class="callback" action="#" method="post">
+        <div class="callback__item">
             <button class="close-button"></button>
         </div>
-        <div class="feedback__item">
-            <h1 class="feedback-title">Обратная связь</h1>
+        <div class="callback__item">
+            <h1 class="callback-title">Заказать звонок</h1>
         </div>
-        <div class="feedback__item feedback-inputs">
-            <input class="feedback-inputs__item" type="text" placeholder="Имя" autofocus>
-            <input class="feedback-inputs__item" type="tel" placeholder="Телефон">
-            <input class="feedback-inputs__item" type="text" placeholder="Электронная почта">
-            <textarea class="feedback-inputs__item" type="text" placeholder="Сообщение" rows="5"></textarea>
+        <div class="callback__item callback-inputs">
+            <input class="callback-inputs__item" type="tel" name="tel" placeholder="Телефон">
         </div>
-        <div class="feedback__item">
-            <p class="feedback-text">Нажимая “отправить”, вы даете согласие на <a class="feedback-text_link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="feedback-text_link" href="#">политикой конфиденциальности</a></p>
+        <div class="callback__item">
+            <p class="callback-text">Нажимая “отправить”, вы даете согласие на <a class="callback-text_link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="callback-text_link" href="#">политикой конфиденциальности</a></p>
         </div>
-        <div class="feedback__item feedback-button">
-            <input class="feedback-button__item" type="button" value="ОТПРАВИТЬ">
-            <div class="feedback-button__item"></div>
+        <div class="callback__item callback-button">
+            <button type="submit" class="callback-button__item">Отправить</button>
+            <div class="callback-button__item"></div>
         </div>
-    </section>
+    </form>
 </body>
 </html>
