@@ -421,7 +421,7 @@
         display: flex;
         justify-content: center;
         align-items: stretch;
-        align-content: flex-start;
+        align-content: stretch;
     }
     &__item:nth-child(1) {
         height: auto;
@@ -482,7 +482,7 @@
         &:nth-child(3) {
             @media (min-width: 768px) {
                 text-align: end;
-                margin-left: 24px;
+                margin-right: 24px;
             }
         }
     }

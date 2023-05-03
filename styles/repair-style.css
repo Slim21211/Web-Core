@@ -112,6 +112,14 @@
       -webkit-column-gap: 24px;
               column-gap: 24px;
       row-gap: 16px; } }
+  @media (min-width: 1120px) {
+    .label-wrapper_expended {
+      height: 248px !important;
+      grid-template-columns: repeat(4, minmax(240px, 1fr));
+      grid-template-rows: repeat(3, 72px);
+      -webkit-column-gap: 24px;
+              column-gap: 24px;
+      row-gap: 16px; } }
 
 .repair-main::after {
   content: '';
@@ -145,9 +153,9 @@
 @media (min-width: 768px) {
   .repair-main_expanded {
     height: 408px; } }
-@media (min-width: 768px) {
+@media (min-width: 1120px) {
   .repair-main_expanded {
-    height: 356px; } }
+    height: 248px; } }
 
 .swiper-pagination {
   bottom: 38px !important; }

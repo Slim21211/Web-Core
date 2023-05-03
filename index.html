@@ -280,17 +280,18 @@
         <div class="feedback__item">
             <h1 class="feedback-title">Обратная связь</h1>
         </div>
+        <form action="#" method="post" enctype="multipart/form-data"></form>
         <div class="feedback__item feedback-inputs">
-            <input class="feedback-inputs__item" type="text" placeholder="Имя" autofocus>
-            <input class="feedback-inputs__item" type="tel" placeholder="Телефон">
-            <input class="feedback-inputs__item" type="text" placeholder="Электронная почта">
-            <textarea class="feedback-inputs__item" type="text" placeholder="Сообщение" rows="5"></textarea>
+            <input class="feedback-inputs__item" type="text" name="name" value="" placeholder="Имя" autofocus>
+            <input class="feedback-inputs__item" type="tel" name="tel" placeholder="Телефон">
+            <input class="feedback-inputs__item" type="mail" name="mail" placeholder="Электронная почта">
+            <textarea class="feedback-inputs__item" type="text" placeholder="Сообщение"></textarea>
         </div>
         <div class="feedback__item">
             <p class="feedback-text">Нажимая “отправить”, вы даете согласие на <a class="feedback-text_link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="feedback-text_link" href="#">политикой конфиденциальности</a></p>
         </div>
         <div class="feedback__item feedback-button">
-            <input class="feedback-button__item" type="button" value="ОТПРАВИТЬ">
+            <button type="submit" class="feedback-button__item">Отправить</button>
             <div class="feedback-button__item"></div>
         </div>
       </section>

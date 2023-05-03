@@ -4,7 +4,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
 
 .site-wrapper {
@@ -42,14 +42,14 @@
         &:nth-child(2) {
             margin-bottom: 24px;
         }
-        &:nth-child(3) {
+        &:nth-child(4) {
             margin-left: 16px;
             margin-bottom: 16px;
             @media (min-width: 1440px) {
                 margin-left: 32px;
             }
         }
-        &:nth-child(4) {
+        &:nth-child(5) {
             width: 288px;
             padding: 0 16px;
             margin-bottom: 19px;
@@ -57,7 +57,7 @@
                 width: 376px;
             }
         }
-        &:nth-child(5) {
+        &:nth-child(6) {
             margin-left: 168px;
             @media (min-width: 1440px) {
                 margin-left: 272px;
@@ -163,6 +163,9 @@
             letter-spacing: -0.15px;
             text-transform: uppercase;
             color: $white;
+            &:hover {
+                cursor: pointer;
+            }
         }
         &:last-child {
             width: 7px;

@@ -455,8 +455,8 @@
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    -ms-flex-line-pack: start;
-        align-content: flex-start; } }
+    -ms-flex-line-pack: stretch;
+        align-content: stretch; } }
 .site-wrapper__item:nth-child(1) {
   height: auto; }
   @media (min-width: 1440px) {
@@ -515,4 +515,4 @@
     @media (min-width: 768px) {
       .main-footer__item:nth-child(3) {
         text-align: end;
-        margin-left: 24px; } }
+        margin-right: 24px; } }

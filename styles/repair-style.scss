@@ -117,13 +117,19 @@
         &_hidden {
             display: none;
         }
-        
     }
     &_expended {
         @media (min-width: 768px) {
             height: 526px !important;
             grid-template-columns: repeat(3, minmax(224px, 1fr));
             grid-template-rows: repeat(4, 72px);
+            column-gap: 24px;
+            row-gap: 16px;
+        }
+        @media (min-width: 1120px) {
+            height: 248px !important;
+            grid-template-columns: repeat(4, minmax(240px, 1fr));
+            grid-template-rows: repeat(3, 72px);
             column-gap: 24px;
             row-gap: 16px;
         }
@@ -161,8 +167,8 @@
         @media (min-width: 768px) {
             height: 408px; 
         }
-        @media (min-width: 768px) {
-            height: 356px; 
+        @media (min-width: 1120px) {
+            height: 248px; 
         }
     }
 }
