@@ -23,7 +23,9 @@
     }
     &__item:nth-child(3) {
         padding-left: 16px;
-        padding-bottom: 32px;
+        @media (min-width: 768px) {
+            padding-bottom: 32px;
+        }
     }
 }
 
