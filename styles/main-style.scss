@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 18.59px 16px;
-    width: 100vw;
+    width: 100%;
     &-wrapper-left {
         margin: 0;
         padding: 0;
@@ -33,7 +33,7 @@
     &-wrapper-right > div:not(div:last-of-type) {
         margin-right: 16px;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         width: auto;
     }
 }
@@ -43,7 +43,7 @@
     margin: 0;
     width: 96.55px;
     height: 50.81px;
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         display: none;
     }
 }
@@ -60,7 +60,7 @@
         transform: scale(1.1);
         cursor: pointer; 
     }
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         display: none;
     }
 }
@@ -75,7 +75,7 @@
     @media (min-width: 768px) {
         display: block;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         display: none;
     }
 }
@@ -84,7 +84,7 @@
     width: 2px;
     height: 32px;
     background: $border;
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         display: none;
     }
 }
@@ -108,7 +108,7 @@
     @media (min-width: 768px) {
         display: block;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         display: none;
     }
 }
@@ -132,7 +132,7 @@
     @media (min-width: 768px) {
         display: block;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         display: none;
     }
 }
@@ -156,7 +156,7 @@
     @media (min-width: 768px) {
         display: block;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         display: none;
     }
 }
@@ -185,7 +185,7 @@
     @media (min-width: 768px) {
         display: none;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         display: block;
         font-family: 'TT Lakes-Medium';
         font-weight: 500;
@@ -233,7 +233,7 @@
         font-family: 'TT Lakes-Bold';
         font-weight: 700;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         width: auto;
     }
 }
@@ -243,7 +243,7 @@
     &::-webkit-scrollbar {
         width: 0;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         overflow: hidden;
     }
 }
@@ -416,8 +416,8 @@
 }
 
 .site-wrapper {
-    @media (min-width: 1440px) {
-        min-width: 1440px;
+    @media (min-width: 1336px) {
+        min-width: 1336px;
         display: flex;
         justify-content: center;
         align-items: stretch;
@@ -425,7 +425,7 @@
     }
     &__item:nth-child(1) {
         height: auto;
-        @media (min-width: 1440px) {
+        @media (min-width: 1336px) {
             width: 306px;
             height: auto;
         }
@@ -455,7 +455,7 @@
 }
 
 .header-block-wrapper {
-    @media (min-width: 1120px) {
+    @media (min-width: 1336px) {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;

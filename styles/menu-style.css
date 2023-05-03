@@ -39,7 +39,7 @@
       top: 0;
       left: 0;
       max-width: 320px; } }
-  @media (min-width: 1440px) {
+  @media (min-width: 1336px) {
     .mobile-menu {
       max-width: 306px;
       height: 100%; } }
@@ -76,7 +76,7 @@
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     cursor: pointer; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1336px) {
     .menu-close {
       display: none; } }
 

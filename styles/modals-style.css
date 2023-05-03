@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0; }
 
-@media (max-width: 1440px) {
+@media (max-width: 1335px) {
   .site-wrapper__item_hidden {
     display: none; } }
 .site-wrapper__item_transparent {
@@ -21,7 +21,7 @@
 
 .feedback {
   width: 320px;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   right: 0;
   top: 0;
@@ -165,7 +165,7 @@
 
 .callback {
   width: 320px;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   right: 0;
   top: 0;
@@ -297,6 +297,8 @@
     letter-spacing: -0.15px;
     text-transform: uppercase;
     color: #FFFFFF; }
+    .callback-button__item:first-child:hover {
+      cursor: pointer; }
   .callback-button__item:last-child {
     width: 7px;
     height: 9.63px;

@@ -24,7 +24,7 @@ document.addEventListener('click', function(event) {
         mainBlock.classList.remove('site-wrapper__item_hidden');
         console.log('2');
     }
-    if (!event.target.closest('.mobile-menu') && event.target != menuIcon && !event.target.closest('.feedback') && event.target != openFeedback) {
+    if (!event.target.closest('.mobile-menu') && event.target != menuIcon && !event.target.closest('.feedback') && event.target != openFeedback && !event.target.closest('.callback') && event.target != openCallback) {
         mobileMenu.classList.add('site-wrapper__item_hidden');
         mainBlock.classList.remove('site-wrapper__item_hidden');
         feedback.classList.add('feedback_hidden');
