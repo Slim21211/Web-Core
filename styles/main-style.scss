@@ -424,6 +424,7 @@
         align-content: flex-start;
     }
     &__item:nth-child(1) {
+        height: auto;
         @media (min-width: 1440px) {
             width: 306px;
             height: auto;
