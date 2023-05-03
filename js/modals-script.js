@@ -6,6 +6,9 @@ const mobileMenuList = document.querySelectorAll('.mobile-menu-list__item');
 const feedback = document.querySelector('.feedback');
 const openFeedback = document.querySelector('.repair-icon');
 const closeFeedback = feedback.querySelector('.close-button');
+const callback = document.querySelector('.callback');
+const openCallback = mobileMenu.querySelector('.menu-call');
+const closeCallback = callback.querySelector('.close-button');
 
 document.addEventListener('click', function(event) {
     if (event.target === menuIcon) {
@@ -24,6 +27,7 @@ document.addEventListener('click', function(event) {
         feedback.classList.add('feedback_hidden');
         mainBlock.classList.remove('site-wrapper__item_transparent');
         mobileMenu.classList.remove('site-wrapper__item_transparent');
+        callback.classList.add('callback_hidden');
         console.log('3');
     }
     if (event.target === openFeedback) {
@@ -43,6 +47,26 @@ document.addEventListener('click', function(event) {
         mainBlock.classList.remove('site-wrapper__item_transparent');
         mobileMenu.classList.remove('site-wrapper__item_transparent');
         console.log('5');
+    }
+    if (event.target === openCallback) {
+        if (window.innerWidth < 768) {
+            mainBlock.classList.add('site-wrapper__item_hidden');
+            mobileMenu.classList.add('site-wrapper__item_hidden');
+        }
+        callback.classList.remove('callback_hidden');
+        mainBlock.classList.add('site-wrapper__item_transparent');
+        mobileMenu.classList.add('site-wrapper__item_transparent');
+        console.log('6');
+    }
+    if (event.target === closeCallback) {
+        if (window.innerWidth < 768) {
+            mainBlock.classList.remove('site-wrapper__item_hidden');
+            mobileMenu.classList.remove('site-wrapper__item_hidden');
+        }
+        callback.classList.add('callback_hidden');
+        mainBlock.classList.remove('site-wrapper__item_transparent');
+        mobileMenu.classList.remove('site-wrapper__item_transparent');
+        console.log('7');
     }
 })
 
