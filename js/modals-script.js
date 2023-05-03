@@ -13,6 +13,7 @@ const closeCallback = callback.querySelector('.close-button');
 
 
 document.addEventListener('click', function(event) {
+    event.preventDefault();
     if (event.target === menuIcon) {
         mobileMenu.classList.remove('site-wrapper__item_hidden');
         mainBlock.classList.add('site-wrapper__item_hidden');

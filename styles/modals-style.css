@@ -22,7 +22,7 @@
 .feedback {
   width: 320px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   background: #FFFFFF;
@@ -156,6 +156,8 @@
     letter-spacing: -0.15px;
     text-transform: uppercase;
     color: #FFFFFF; }
+    .feedback-button__item:first-child:hover {
+      cursor: pointer; }
   .feedback-button__item:last-child {
     width: 7px;
     height: 9.63px;
@@ -164,7 +166,7 @@
 .callback {
   width: 320px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   background: #FFFFFF;

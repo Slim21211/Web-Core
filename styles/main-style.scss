@@ -447,6 +447,11 @@
             height: auto;
         }
     }
+    &__item:nth-child(4) {
+        @media (min-width: 1440px) {
+            height: auto;
+        }
+    }
 }
 
 .header-block-wrapper {

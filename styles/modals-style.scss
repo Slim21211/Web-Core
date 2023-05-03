@@ -23,7 +23,7 @@
 .feedback {
     width: 320px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     background: $white;
@@ -163,6 +163,9 @@
             letter-spacing: -0.15px;
             text-transform: uppercase;
             color: $white;
+            &:hover {
+                cursor: pointer;
+            }
         }
         &:last-child {
             width: 7px;
@@ -175,7 +178,7 @@
 .callback {
     width: 320px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     background: $white;

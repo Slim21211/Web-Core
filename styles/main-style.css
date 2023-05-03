@@ -476,6 +476,9 @@
 @media (min-width: 1440px) {
   .site-wrapper__item:nth-child(3) {
     height: auto; } }
+@media (min-width: 1440px) {
+  .site-wrapper__item:nth-child(4) {
+    height: auto; } }
 
 @media (min-width: 1120px) {
   .header-block-wrapper {
