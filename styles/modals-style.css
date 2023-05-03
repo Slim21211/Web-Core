@@ -1,0 +1,18 @@
+@font-face {
+  font-family: TT Lakes-Regular;
+  src: url("../fonts/TTLakes-Regular.ttf"); }
+@font-face {
+  font-family: TT Lakes-Bold;
+  src: url("../fonts/TTLakes-Bold.ttf"); }
+@font-face {
+  font-family: TT Lakes-Medium;
+  src: url("../fonts/TTLakes-Medium.ttf"); }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 1440px) {
+  .site-wrapper__item_hidden {
+    display: none; } }

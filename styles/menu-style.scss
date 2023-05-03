@@ -14,10 +14,7 @@
     height: 100%;
     background: $white;
     box-shadow: -2px 0px 4px $dark_blue, 16px 0px 52px $blue;
-    @media (max-width: 1439px) {
-        display: none;
-    }
-}
+  }
 
 .menu-close {
     padding: 0;

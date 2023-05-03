@@ -78,6 +78,14 @@
   font-size: 14px;
   letter-spacing: .2px;
   color: #1B1C21; }
+  .prices-wrapper__item::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 96%;
+    top: 62px;
+    left: 16px;
+    background: #F8F8F8; }
   @media (min-width: 768px) {
     .prices-wrapper__item {
       width: 100%;
