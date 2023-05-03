@@ -8,7 +8,9 @@ const openFeedback = document.querySelector('.repair-icon');
 const closeFeedback = feedback.querySelector('.close-button');
 const callback = document.querySelector('.callback');
 const openCallback = mobileMenu.querySelector('.menu-call');
+const openCallbackTablet = document.querySelector('.call');
 const closeCallback = callback.querySelector('.close-button');
+
 
 document.addEventListener('click', function(event) {
     if (event.target === menuIcon) {
@@ -49,6 +51,16 @@ document.addEventListener('click', function(event) {
         console.log('5');
     }
     if (event.target === openCallback) {
+        if (window.innerWidth < 768) {
+            mainBlock.classList.add('site-wrapper__item_hidden');
+            mobileMenu.classList.add('site-wrapper__item_hidden');
+        }
+        callback.classList.remove('callback_hidden');
+        mainBlock.classList.add('site-wrapper__item_transparent');
+        mobileMenu.classList.add('site-wrapper__item_transparent');
+        console.log('6');
+    }
+    if (event.target === openCallbackTablet) {
         if (window.innerWidth < 768) {
             mainBlock.classList.add('site-wrapper__item_hidden');
             mobileMenu.classList.add('site-wrapper__item_hidden');
