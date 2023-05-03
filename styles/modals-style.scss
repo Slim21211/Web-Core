@@ -22,13 +22,14 @@
 
 .feedback {
     width: 320px;
-    height: 100vh;
-    position: fixed;
+    height: 150%;
+    position: absolute;
     right: 0;
     top: 0;
     background: $white;
     box-shadow: -2px 0px 4px $dark_blue, 16px 0px 52px $blue;
-    @media (min-width: 1440px) {
+    @media (min-width: 1336px) {
+        position: fixed;
         height: 100%;
         width: 440px;
     }
@@ -177,13 +178,14 @@
 
 .callback {
     width: 320px;
-    height: 100vh;
-    position: fixed;
+    height: 100%;
+    position: absolute;
     right: 0;
     top: 0;
     background: $white;
     box-shadow: -2px 0px 4px $dark_blue, 16px 0px 52px $blue;
-    @media (min-width: 1440px) {
+    @media (min-width: 1336px) {
+        position: fixed;
         height: 100%;
         width: 440px;
     }

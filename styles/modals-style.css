@@ -21,15 +21,16 @@
 
 .feedback {
   width: 320px;
-  height: 100vh;
-  position: fixed;
+  height: 150%;
+  position: absolute;
   right: 0;
   top: 0;
   background: #FFFFFF;
   -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
           box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); }
-  @media (min-width: 1440px) {
+  @media (min-width: 1336px) {
     .feedback {
+      position: fixed;
       height: 100%;
       width: 440px; } }
   .feedback_hidden {
@@ -165,15 +166,16 @@
 
 .callback {
   width: 320px;
-  height: 100vh;
-  position: fixed;
+  height: 100%;
+  position: absolute;
   right: 0;
   top: 0;
   background: #FFFFFF;
   -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
           box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); }
-  @media (min-width: 1440px) {
+  @media (min-width: 1336px) {
     .callback {
+      position: fixed;
       height: 100%;
       width: 440px; } }
   .callback_hidden {
