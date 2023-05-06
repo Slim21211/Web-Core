@@ -15,8 +15,6 @@ const feedbackBlur = document.querySelector('.feedback-blur');
 const callbackBlur = document.querySelector('.callback-blur');
 const openFeedbackWeb = document.querySelector('.open-feedback');
 
-console.log(openFeedbackWeb);
-
 menuIcon.addEventListener('click', function() {
     mobileMenu.classList.remove('site-wrapper__item_hidden');
     mainBlock.classList.add('site-wrapper__item_hidden');
