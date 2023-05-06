@@ -144,14 +144,17 @@
     }
     &__item:first-child {
         background: $pink;
-            border-radius: 16px;
-            border: none;
-            font-family: 'TT Lakes-Bold';
-            font-weight: 700;
-            font-size: 12px;
-            letter-spacing: -0.15px;
-            text-transform: uppercase;
-            color: $white;
+        border-radius: 16px;
+        border: none;
+        font-family: 'TT Lakes-Bold';
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        color: $white;
+        &:hover {
+            cursor: pointer;
+        }
     }
     &__item:last-child {
         width: 7px;

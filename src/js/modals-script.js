@@ -13,6 +13,9 @@ const closeCallback = callback.querySelector('.close-button');
 const menuBlur = document.querySelector('.menu-blur');
 const feedbackBlur = document.querySelector('.feedback-blur');
 const callbackBlur = document.querySelector('.callback-blur');
+const openFeedbackWeb = document.querySelector('.open-feedback');
+
+console.log(openFeedbackWeb);
 
 menuIcon.addEventListener('click', function() {
     mobileMenu.classList.remove('site-wrapper__item_hidden');
@@ -33,6 +36,11 @@ menuBlur.addEventListener('click', function() {
 });
 
 openFeedback.addEventListener('click', function() {
+    feedback.classList.remove('feedback_hidden');
+    feedbackBlur.classList.remove('feedback-blur_hidden');
+});
+
+openFeedbackWeb.addEventListener('click', function() {
     feedback.classList.remove('feedback_hidden');
     feedbackBlur.classList.remove('feedback-blur_hidden');
 });
