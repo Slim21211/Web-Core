@@ -19,18 +19,21 @@
         top: 0;
         left: 0;
         max-width: 320px;
+        z-index: 2;
     }
     @media (max-width: 767px) {
         position: absolute;
         top: 0;
         left: 0;
-        min-width: 360px;
+        min-width: 320px;
+        z-index: 2;
     }
     @media (max-width: 1335px) {
         position: absolute;
         top: 0;
         left: 0;
-        max-width: 320px;
+        max-width: 360px;
+        z-index: 2;
     }
     @media (min-width: 1336px) {
         max-width: 306px;

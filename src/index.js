@@ -1,5 +1,8 @@
+import 'swiper/css';
+import 'swiper/css/pagination';
 import './index.html';
 import './index.scss';
+
 
 let script = require('../src/js/script');
 let modals = require('../src/js/modals-script');

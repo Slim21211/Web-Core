@@ -28,6 +28,7 @@
     top: 0;
     background: $white;
     box-shadow: -2px 0px 4px $dark_blue, 16px 0px 52px $blue;
+    z-index: 2;
     @media (min-width: 1336px) {
         position: fixed;
         height: 100%;
@@ -46,22 +47,8 @@
         &:nth-child(3) {
             margin-left: 16px;
             margin-bottom: 16px;
-            @media (min-width: 1440px) {
+            @media (min-width: 1336px) {
                 margin-left: 32px;
-            }
-        }
-        &:nth-child(4) {
-            width: 288px;
-            padding: 0 16px;
-            margin-bottom: 19px;
-            @media (min-width: 1440px) {
-                width: 376px;
-            }
-        }
-        &:nth-child(5) {
-            margin-left: 168px;
-            @media (min-width: 1440px) {
-                margin-left: 272px;
             }
         }
     }
@@ -74,7 +61,7 @@
     height: 40px;
     background: $white url('img/icons/burgerclose.png');
     border: none;
-    @media (min-width: 1440px) {
+    @media (min-width: 1336px) {
         position: absolute;
         right: 473px;
         top: 40px;
@@ -106,6 +93,25 @@
     }
 }
 
+.feedback-form {
+    &__item {
+        &:nth-child(2) {
+            width: 288px;
+            padding: 0 16px;
+            margin-bottom: 19px;
+            @media (min-width: 1336px) {
+                width: 376px;
+            }
+        }
+        &:nth-child(3) {
+            margin-left: 168px;
+            @media (min-width: 1336px) {
+                margin-left: 272px;
+            }
+        }
+    }
+}
+
 .feedback-inputs {
     &__item {
         width: 288px;
@@ -118,13 +124,15 @@
         font-weight: 500;
         font-size: 16px;
         letter-spacing: .2px;
-        color: $medium_grey;
-        @media (min-width: 1440px) {
+        color: $light_black;
+        &::placeholder {
+            color:$medium_grey;
+        }
+        @media (min-width: 1336px) {
             width: 376px;
         }
         &:last-child {
             height: 118px;
-            margin-bottom: 0;
         }
     }
 }
@@ -184,6 +192,7 @@
     top: 0;
     background: $white;
     box-shadow: -2px 0px 4px $dark_blue, 16px 0px 52px $blue;
+    z-index: 4;
     @media (min-width: 1336px) {
         position: fixed;
         height: 100%;
@@ -202,22 +211,8 @@
         &:nth-child(3) {
             margin-left: 16px;
             margin-bottom: 16px;
-            @media (min-width: 1440px) {
+            @media (min-width: 1336px) {
                 margin-left: 32px;
-            }
-        }
-        &:nth-child(4) {
-            width: 288px;
-            padding: 0 16px;
-            margin-bottom: 19px;
-            @media (min-width: 1440px) {
-                width: 376px;
-            }
-        }
-        &:nth-child(5) {
-            margin-left: 168px;
-            @media (min-width: 1440px) {
-                margin-left: 272px;
             }
         }
     }
@@ -230,7 +225,7 @@
     height: 40px;
     background: $white url('img/icons/burgerclose.png');
     border: none;
-    @media (min-width: 1440px) {
+    @media (min-width: 1336px) {
         position: absolute;
         right: 473px;
         top: 40px;
@@ -262,6 +257,25 @@
     }
 }
 
+.callback-form {
+    &__item {
+        &:nth-child(2) {
+            width: 288px;
+            padding: 0 16px;
+            margin-bottom: 19px;
+            @media (min-width: 1336px) {
+                width: 376px;
+            }
+        }
+        &:nth-child(3) {
+            margin-left: 168px;
+            @media (min-width: 1336px) {
+                margin-left: 272px;
+            }
+        }
+    }
+}
+
 .callback-inputs {
     &__item {
         width: 288px;
@@ -274,8 +288,11 @@
         font-weight: 500;
         font-size: 16px;
         letter-spacing: .2px;
-        color: $medium_grey;
-        @media (min-width: 1440px) {
+        color: $light_black;
+        &::placeholder {
+            color:$medium_grey;
+        }
+        @media (min-width: 1336px) {
             width: 376px;
         }
     }
@@ -325,5 +342,47 @@
             height: 9.63px;
             background: url(img/icons/dropdown.png);
         }
+    }
+}
+
+.menu-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $white;
+    opacity: .9;
+    z-index: 1;
+    &_hidden {
+        display: none;
+    }
+}
+
+.feedback-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $white;
+    opacity: .9;
+    z-index: 1;
+    &_hidden {
+        display: none;
+    }
+}
+
+.callback-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $white;
+    opacity: .9;
+    z-index: 3;
+    &_hidden {
+        display: none;
     }
 }

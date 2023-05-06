@@ -10,78 +10,61 @@ const callback = document.querySelector('.callback');
 const openCallback = mobileMenu.querySelector('.menu-call');
 const openCallbackTablet = document.querySelector('.call');
 const closeCallback = callback.querySelector('.close-button');
+const menuBlur = document.querySelector('.menu-blur');
+const feedbackBlur = document.querySelector('.feedback-blur');
+const callbackBlur = document.querySelector('.callback-blur');
 
+menuIcon.addEventListener('click', function() {
+    mobileMenu.classList.remove('site-wrapper__item_hidden');
+    mainBlock.classList.add('site-wrapper__item_hidden');
+    menuBlur.classList.remove('menu-blur_hidden');
+});
 
-document.addEventListener('click', function(event) {
-    event.preventDefault();
-    if (event.target === menuIcon) {
-        mobileMenu.classList.remove('site-wrapper__item_hidden');
-        mainBlock.classList.add('site-wrapper__item_hidden');
-        console.log('1');
-    }
-    if (event.target === closeMenu) {
-        mobileMenu.classList.add('site-wrapper__item_hidden');
-        mainBlock.classList.remove('site-wrapper__item_hidden');
-        console.log('2');
-    }
-    if (!event.target.closest('.mobile-menu') && event.target != menuIcon && !event.target.closest('.feedback') && event.target != openFeedback && !event.target.closest('.callback') && event.target != openCallback) {
-        mobileMenu.classList.add('site-wrapper__item_hidden');
-        mainBlock.classList.remove('site-wrapper__item_hidden');
-        feedback.classList.add('feedback_hidden');
-        mainBlock.classList.remove('site-wrapper__item_transparent');
-        mobileMenu.classList.remove('site-wrapper__item_transparent');
-        callback.classList.add('callback_hidden');
-        console.log('3');
-    }
-    if (event.target === openFeedback) {
-        if (window.innerWidth < 768) {
-            mainBlock.classList.add('site-wrapper__item_hidden');
-        }
-        feedback.classList.remove('feedback_hidden');
-        mainBlock.classList.add('site-wrapper__item_transparent');
-        mobileMenu.classList.add('site-wrapper__item_transparent');
-        console.log('4');
-    }
-    if (event.target === closeFeedback) {
-        if (window.innerWidth < 768) {
-            mainBlock.classList.remove('site-wrapper__item_hidden');
-        }
-        feedback.classList.add('feedback_hidden');
-        mainBlock.classList.remove('site-wrapper__item_transparent');
-        mobileMenu.classList.remove('site-wrapper__item_transparent');
-        console.log('5');
-    }
-    if (event.target === openCallback) {
-        if (window.innerWidth < 768) {
-            mainBlock.classList.add('site-wrapper__item_hidden');
-            mobileMenu.classList.add('site-wrapper__item_hidden');
-        }
-        callback.classList.remove('callback_hidden');
-        mainBlock.classList.add('site-wrapper__item_transparent');
-        mobileMenu.classList.add('site-wrapper__item_transparent');
-        console.log('6');
-    }
-    if (event.target === openCallbackTablet) {
-        if (window.innerWidth < 768) {
-            mainBlock.classList.add('site-wrapper__item_hidden');
-            mobileMenu.classList.add('site-wrapper__item_hidden');
-        }
-        callback.classList.remove('callback_hidden');
-        mainBlock.classList.add('site-wrapper__item_transparent');
-        mobileMenu.classList.add('site-wrapper__item_transparent');
-        console.log('6');
-    }
-    if (event.target === closeCallback) {
-        if (window.innerWidth < 768) {
-            mainBlock.classList.remove('site-wrapper__item_hidden');
-            mobileMenu.classList.remove('site-wrapper__item_hidden');
-        }
-        callback.classList.add('callback_hidden');
-        mainBlock.classList.remove('site-wrapper__item_transparent');
-        mobileMenu.classList.remove('site-wrapper__item_transparent');
-        console.log('7');
-    }
-})
+closeMenu.addEventListener('click', function() {
+    mobileMenu.classList.add('site-wrapper__item_hidden');
+    mainBlock.classList.remove('site-wrapper__item_hidden');
+    menuBlur.classList.add('menu-blur_hidden');
+});
+
+menuBlur.addEventListener('click', function() {
+    mobileMenu.classList.add('site-wrapper__item_hidden');
+    mainBlock.classList.remove('site-wrapper__item_hidden');
+    menuBlur.classList.add('menu-blur_hidden');
+});
+
+openFeedback.addEventListener('click', function() {
+    feedback.classList.remove('feedback_hidden');
+    feedbackBlur.classList.remove('feedback-blur_hidden');
+});
+
+closeFeedback.addEventListener('click', function() {
+    feedback.classList.add('feedback_hidden');
+    feedbackBlur.classList.add('feedback-blur_hidden');
+});
+
+feedbackBlur.addEventListener('click', function() {
+    feedback.classList.add('feedback_hidden');
+    feedbackBlur.classList.add('feedback-blur_hidden');
+});
+
+openCallback.addEventListener('click', function() {
+    callback.classList.remove('callback_hidden');
+    callbackBlur.classList.remove('callback-blur_hidden');
+});
+openCallbackTablet.addEventListener('click', function() {
+    callback.classList.remove('callback_hidden');
+    callbackBlur.classList.remove('callback-blur_hidden');
+});
+
+closeCallback.addEventListener('click', function() {
+    callback.classList.add('callback_hidden');
+    callbackBlur.classList.add('callback-blur_hidden');
+});
+
+callbackBlur.addEventListener('click', function() {
+    callback.classList.add('callback_hidden');
+    callbackBlur.classList.add('callback-blur_hidden');
+});
 
 for (let i = 0; i < mobileMenuList.length; i++) {
     mobileMenuList[i].addEventListener('click', function() {

@@ -1,9 +1,12 @@
+import Swiper, { Pagination } from 'swiper';
+
 const swiperGadgets = new Swiper('.repair-gadgets-swiper', {
     spaceBetween: 16,
     slidesOffsetBefore: 16,
     slidesOffsetAfter: 16,
     slidesPerView: 'auto',
     grabCursor: true,
+    modules: [Pagination],
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',

@@ -1,9 +1,12 @@
-const swiperRepair = new Swiper('.repair-main', {
+import Swiper, { Pagination } from 'swiper';
+
+const repairSwiper = new Swiper('.repair-main', {
     spaceBetween: 16,
     slidesOffsetBefore: 16,
     slidesOffsetAfter: 16,
     slidesPerView: 'auto',
     grabCursor: true,
+    modules: [Pagination],
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
